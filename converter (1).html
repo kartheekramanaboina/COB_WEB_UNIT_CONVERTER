@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Unit Converter</title>
+<link rel="stylesheet" href="converter.css">
+
+</head>
+
+<body>
+<div class="container">
+<h1>Unit Converter</h1>
+       
+
+<select id="type" onchange="con()">
+<option value="len">length</option>
+<option value="tm">time</option>
+<option value="ma">mass</option>
+<option value="tem">temperature</option>
+</select>
+<div>
+<input type="number" id="inputValue" placeholder="enter value">
+<div class="res">
+        <p id="result"></p>
+</div>
+</div>
+         <div id="length" style="display: none;">
+<select id="fromUnit"  onchange="convert()">
+<option value="cm">Centimeter (cm)</option>
+<option value="inch">Inch (in)</option>
+<option value="feet">Feet (ft)</option>
+<option value="meter">Meter (m)</option>
+<option value="kilometer">Kilometer (km)</option>
+</select>
+<select id="toUnit" onchange="convert()">
+<option value="cm">Centimeter (cm)</option>
+<option value="inch">Inch (in)</option>
+<option value="feet">Feet (ft)</option>
+<option value="meter">Meter (m)</option>
+<option value="yard">Yard (yd)</option>
+<option value="mile">Mile (mi)</option>
+<option value="kilometer">Kilometer (km)</option>
+</select>
+        </div>
+        <div id="temperature" style="display: none;">
+          <select id="tfromUnit" onchange="tempcon()">
+<option value="f">farenhit</option>
+<option value="c">celsius(in)</option>
+<option value="k">kelvin</option>
+</select>
+        <select id="ttoUnit" onchange="tempcon()">
+<option value="f">farenhit</option>
+<option value="c">celsius(in)</option>
+<option value="k">kelvin</option>
+</select>
+        </div>
+         <div id="time" style="display: none;">
+          <select id="tifromUnit" onchange="timecon()">
+<option value="h">hours</option>
+<option value="s">seconds(in)</option>
+<option value="m">minutes</option>
+</select>
+        <select id="titoUnit" onchange="timecon()">
+<option value="h">hours</option>
+<option value="s">seconds(in)</option>
+<option value="m">minutes</option>
+</select>
+</div>
+<div id="mass" style="display: none;">
+    <select id="mfromUnit" onchange="masscon()">
+<option value="k">kilograms</option>
+<option value="g">grams</option>
+<option value="p">pounds</option>
+<option value="t">tons</option>
+
+
+</select>
+  <select id="mtoUnit" onchange="masscon()">
+    <option value="k">kilograms</option>
+    <option value="g">grams</option>
+    <option value="p">pounds</option>
+    <option value="t">tons</option>
+</select>
+        </div>
+        
+
+</div>
+
+<script src="converter.js"></script>
+</body>
+
+</html>
+
+
+
+

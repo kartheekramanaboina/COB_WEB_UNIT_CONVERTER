@@ -1,0 +1,56 @@
+.container {
+    margin: 20px auto;
+    width: 300px;
+    background-color: #03885e;
+
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(247, 244, 244, 0.489);
+}
+       
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+    input[type="number"] {
+        width: 47%;
+        height: 50px;
+        box-sizing: border-box;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+#length select,
+#temperature select,
+#time select,
+#mass select {
+    display: inline-block;
+    width: 47.25%; /* Adjust as needed */
+    margin-right: 2%; /* Adjust as needed */
+    box-sizing: border-box;
+}
+
+.res {
+    
+        display: inline-block;
+        width: 45%;
+        height: 50px;
+        margin-top: 20px;
+        margin-left:20px;
+        margin-bottom: 20px;
+        justify-content: center;
+        background-color: white;
+    
+    
+}
